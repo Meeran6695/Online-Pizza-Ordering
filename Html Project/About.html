@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Pizza
+        </title>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap');
+            *{
+                margin: 0;
+                padding: 0;
+                font-family: 'Poppins', sans-serif;
+            }
+            header{
+                min-height: 100vh;
+                width: 100%;
+                background-color: #1e1f26;
+                background-position: center;
+                background-size: cover;
+                position: relative;
+            }
+            h1{
+                width: 150px;
+                font-size: 30px;
+
+            }
+            h1 a{
+                color: red;
+            }
+            nav{
+                display: flex;
+                padding: 1% 2%;
+                justify-content: space-between;
+                align-items: center;
+            }
+            nav ul{
+                flex: 1;
+                text-align: right;
+            }
+            nav ul a{
+                list-style: none;
+                display: inline-block;
+                padding: 8px 12px;
+                position: relative;
+                color: black;
+                text-decoration: none;
+                font-size: 18px;
+            }
+            .nav ul a li{
+                color: white;
+                text-decoration: none;
+                font-size: 30px;
+            }
+            nav ul a::after{
+                content: '';
+                width: 0%;
+                height: 2px;
+                background: #f44336;
+                display: block;
+                margin: auto;
+                transition: 0.05s;
+            }
+            nav ul a:hover:after{
+                width: 100%;
+                
+            }
+            .home-bg{
+                background:url(images/home-bg.jpg) no-repeat;
+                background-size: cover;
+                background-position: center;
+            }
+            .home-bg .home .slide-container .slide.active .content h3{
+                color:white;
+                margin-left: 15rem;
+                margin-bottom: 2rem;
+                font-size: 10rem;
+            }
+            /* About ---*/
+            
+            .about .box-container{
+                display: grid;
+                grid-template-columns: repeat(auto-fit, 18rem);
+                gap:1.5rem;
+                align-items: flex-start;
+                justify-content: center;
+            }
+
+            .about .box-container .box{
+                background-color:blanchedalmond;
+                border-radius: 1.5rem;
+                padding: 2rem;
+                text-align: center;
+                box-shadow: var(--box-shadow);
+            }
+            
+            .about .box-container .box img{
+                 width: 100%;
+                 margin-bottom: 4rem;
+            }
+
+            .about .box-container .box h3{
+               font-size: 2rem;
+               color:#1e1f26;
+            }
+
+            .about .box-container .box p{
+                padding:1rem 0;
+                line-height: 2;
+                font-size: 1rem;
+                color:black;
+            }
+            
+            /* footer */
+            .footer{
+                width: 100%;
+                background-color: azure;
+                text-align: center;
+                padding: 30px 1;
+            }
+            .footer h4{
+                margin-bottom: 25px;
+                margin-top: 20px;
+                font-weight: 600;
+            }
+        </style>
+    </head>
+    <body>
+        <section class="nav-links">
+        <nav>
+            <h1><i><a>Pizza</a>King</i></h1>
+            <div class="nav-links">
+            <ul>
+                <a href="index.html"><li>Home</li></a>
+                <a href="#"><li>Order</li></a>
+                <a href="#"><li>Near</li></a>
+                <a href="#"><li>About</li></a>
+            </ul>
+            </div>
+        </nav>
+        </section>
+        <div class="home-bg">
+
+            <section class="home" id="home">
+         
+               <div class="slide-container">
+         
+                  <div class="slide active">
+                     <!-- <div class="image">
+                        <img src="images/home-img-1.png" alt="">
+                     </div> -->
+                     <div class="content">
+                        <h3>About Us</h3>
+                     </div>
+                  </div>
+               </div>
+         
+            </section>
+         
+         </div>
+
+            <!-- About -->
+        <section class="about" id="about">
+         
+            <div class="box-container">
+         
+               <div class="box">
+                  <img src="images/about-1.svg" alt="">
+                  <h3>Made with love</h3>
+                  <p>Order a delicious pizza on the go, anywhere, anytime. Pizza is happy to assist you with your home delivery.</p>
+               </div>
+         
+               <div class="box">
+                  <img src="images/about-1.svg" alt="">
+                  <h3>30 Minutes delivery</h3>
+                  <p>Every time you order, you get a hot and fresh pizza delivered at your doorstep in less than thirty minutes.</p>
+                
+               </div>
+         
+               <div class="box">
+                  <img src="images/about-3.svg" alt="">
+                  <h3>Share with freinds</h3>
+                  <p>Enjoy your pizza and also Share with your freinds.</p>
+                  
+               </div>
+         
+            </div>
+         
+         </section>
+        
+<!-- /*-------Footer-------*/ -->
+        <section class="footer">
+            <h4>About Us</h4>
+            <p>Order a delicious pizza on the go, anywhere, anytime. Pizza King is happy to assist you with your home delivery.<br> Every time you order, you get a hot and fresh pizza delivered at your doorstep in less than thirty minutes. *T&C Apply.
+                <Br>Hurry up and place your order now!</p>
+            
+            </div>
+        </section>
+    </body>
+</html>
